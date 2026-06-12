@@ -110,17 +110,17 @@
       </a>
       <a class="work-row" href="#p03">
         <span class="badge">3</span>
-        <span><span class="t">Miracle Autonomous Walking Robot</span><span class="m">소아–노인 보행보조 자율보행로봇 — <span class="dt">Team · Lab Lead · 2023–25</span></span></span>
+        <span><span class="t">Miracle Walking Aid</span><span class="m">GMFCS 2–3 보행보조기 · 구조해석·실물제작 — <span class="dt">Team · Lab Lead · 2023–25</span></span></span>
         <span class="arrow">↗</span>
       </a>
       <a class="work-row" href="#p04">
         <span class="badge">4</span>
-        <span><span class="t">SPLASH Fish-Tank Control</span><span class="m">관상어 환경 모니터링·자동제어 IoT 제품 — <span class="dt">Personal · Product+App · 2021</span></span></span>
+        <span><span class="t">Camper Production</span><span class="m">보트트레일러 캠퍼 1:1 제작 · 실용신안 — <span class="dt">Industry–Academia (NRF) · 2020</span></span></span>
         <span class="arrow">↗</span>
       </a>
       <a class="work-row" href="#p05">
         <span class="badge">5</span>
-        <span><span class="t">Camper Production</span><span class="m">보트트레일러 캠퍼 1:1 제작 · 실용신안 — <span class="dt">Industry–Academia (NRF) · 2020</span></span></span>
+        <span><span class="t">SPLASH Fish-Tank Control</span><span class="m">관상어 환경 모니터링·자동제어 IoT 제품 — <span class="dt">Personal · Product+App · 2021</span></span></span>
         <span class="arrow">↗</span>
       </a>
     </div>
@@ -223,6 +223,60 @@
           시각화하고, 디바이스가 자동 제어할 전기장판 단계를 개인화합니다. 측정과 온열 제어의 순환을 잇습니다.
         </span>
       </p>
+    </div>
+
+    <div class="app-flow reveal">
+      <div class="app-cap"><span class="n">↳</span><div><b>User Flow</b><span class="kr">앱 실행부터 온도 제어·리포트까지의 사용자 플로우</span></div></div>
+      <svg class="flowchart" viewBox="0 0 1480 345" role="img" aria-label="INTELLIWARM app user flow chart">
+        <defs><marker id="ah" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto">
+          <path d="M0,0 L6.5,3 L0,6 Z" fill="#6a6c73"/></marker></defs>
+        <!-- nodes -->
+        <g>
+          <rect class="fc-box" x="20" y="150" width="190" height="88" rx="10"/>
+          <text class="fc-stage" x="115" y="138" text-anchor="middle" font-size="11">01</text>
+          <text class="fc-t" x="115" y="192" text-anchor="middle" font-size="18">Launch</text>
+          <text class="fc-k" x="115" y="216" text-anchor="middle" font-size="12">앱 실행</text>
+        </g>
+        <g>
+          <rect class="fc-box accent" x="262" y="150" width="190" height="88" rx="10"/>
+          <text class="fc-stage" x="357" y="138" text-anchor="middle" font-size="11">02</text>
+          <text class="fc-t" x="357" y="192" text-anchor="middle" font-size="18">Onboarding</text>
+          <text class="fc-k" x="357" y="216" text-anchor="middle" font-size="12">웨어러블·선호 단계</text>
+        </g>
+        <g>
+          <rect class="fc-box accent" x="504" y="150" width="190" height="88" rx="10"/>
+          <text class="fc-stage" x="599" y="138" text-anchor="middle" font-size="11">03</text>
+          <text class="fc-t" x="599" y="192" text-anchor="middle" font-size="18">Bedtime</text>
+          <text class="fc-k" x="599" y="216" text-anchor="middle" font-size="12">수면감지 → 온도제어</text>
+        </g>
+        <g>
+          <rect class="fc-box" x="746" y="150" width="190" height="88" rx="10"/>
+          <text class="fc-stage" x="841" y="138" text-anchor="middle" font-size="11">04</text>
+          <text class="fc-t" x="841" y="192" text-anchor="middle" font-size="18">Wake-up</text>
+          <text class="fc-k" x="841" y="216" text-anchor="middle" font-size="12">수면 설문</text>
+        </g>
+        <g>
+          <rect class="fc-box accent" x="988" y="150" width="190" height="88" rx="10"/>
+          <text class="fc-stage" x="1083" y="138" text-anchor="middle" font-size="11">05</text>
+          <text class="fc-t" x="1083" y="192" text-anchor="middle" font-size="18">Report</text>
+          <text class="fc-k" x="1083" y="216" text-anchor="middle" font-size="12">점수·단계 분석</text>
+        </g>
+        <g>
+          <rect class="fc-box" x="1230" y="150" width="190" height="88" rx="10"/>
+          <text class="fc-stage" x="1325" y="138" text-anchor="middle" font-size="11">06</text>
+          <text class="fc-t" x="1325" y="192" text-anchor="middle" font-size="18">Insight</text>
+          <text class="fc-k" x="1325" y="216" text-anchor="middle" font-size="12">통계·추이</text>
+        </g>
+        <!-- arrows -->
+        <line class="fc-line" x1="210" y1="194" x2="258" y2="194" marker-end="url(#ah)"/>
+        <line class="fc-line" x1="452" y1="194" x2="500" y2="194" marker-end="url(#ah)"/>
+        <line class="fc-line" x1="694" y1="194" x2="742" y2="194" marker-end="url(#ah)"/>
+        <line class="fc-line" x1="936" y1="194" x2="984" y2="194" marker-end="url(#ah)"/>
+        <line class="fc-line" x1="1178" y1="194" x2="1226" y2="194" marker-end="url(#ah)"/>
+        <!-- feedback loop -->
+        <path class="fc-loop" d="M1325,238 C1325,300 1325,312 1150,312 L535,312 C360,312 357,300 357,244" marker-end="url(#ah)"/>
+        <text class="fc-stage" x="841" y="334" text-anchor="middle" font-size="11">RE-PERSONALIZE PREFERRED LEVEL · 선호 단계 재학습</text>
+      </svg>
     </div>
 
     <div class="app-flow reveal">
@@ -419,28 +473,27 @@
       </span>
     </p>
     <div class="media-grid three reveal">
-      <figure class="media"><img src="assets/img/miracle/fea-displacement.jpg" alt="FEA displacement distribution"><figcaption>Displacement · 변위량 분포</figcaption></figure>
-      <figure class="media"><img src="assets/img/miracle/fea-strain.jpg" alt="FEA strain distribution"><figcaption>Strain · 변형률 분포</figcaption></figure>
-      <figure class="media"><img src="assets/img/miracle/fea-stress.jpg" alt="FEA Von Mises stress distribution"><figcaption>Von Mises stress · 응력 분포 (max 3.42 MPa)</figcaption></figure>
+      <figure class="media contain figrow"><img src="assets/img/miracle/fea-displacement.jpg" alt="FEA displacement distribution"><figcaption>Displacement · 변위량 분포</figcaption></figure>
+      <figure class="media contain figrow"><img src="assets/img/miracle/fea-strain.jpg" alt="FEA strain distribution"><figcaption>Strain · 변형률 분포</figcaption></figure>
+      <figure class="media contain figrow"><img src="assets/img/miracle/fea-stress.jpg" alt="FEA Von Mises stress distribution"><figcaption>Von Mises · 응력 분포 (max 3.42 MPa)</figcaption></figure>
     </div>
-    <div class="feature rev reveal">
-      <figure class="media"><img src="assets/img/miracle/lattice-01.jpg" alt="Internal Kelvin-cell lattice inside a frame member"></figure>
-      <div>
-        <h4>Internal cell geometry — a stress-tuned lattice</h4>
-        <p>
-          The frame members are hollowed and refilled with an nTop Kelvin-cell lattice, placing
-          material only where the analysis says it is needed. The result is <b>60.77% lighter</b>
-          (57.9 → 23.7 kg of analyzed structure) while peak Von Mises stress (3.42 MPa) stays far
-          below the Ti-6Al-4V yield strength (880–950 MPa) — light, but with a wide safety margin.
-          <span class="kr">
-            부재 속을 비우고 nTop Kelvin 셀 격자로 다시 채워, 해석이 필요하다고 말하는 곳에만 재료를
-            배치했습니다. 그 결과 약 <b>60.77% 경량화</b>(해석 구조 기준 57.9→23.7kg)하면서도 최대 응력
-            3.42 MPa는 Ti-6Al-4V 항복강도(880–950 MPa) 대비 충분한 안전여유를 확보했습니다.
-          </span>
-        </p>
-      </div>
+
+    <p class="sublabel reveal" style="margin-top:3.2rem">Internal Cell Geometry</p>
+    <p class="proj-lead reveal" style="font-size:1.08rem">
+      <em>A stress-tuned Kelvin-cell lattice.</em> The frame members are hollowed and refilled with
+      an nTop Kelvin-cell lattice, placing material only where the analysis says it is needed —
+      <b>60.77% lighter</b> (57.9 → 23.7 kg of analyzed structure) while peak Von Mises stress
+      (3.42 MPa) stays far below the Ti-6Al-4V yield strength (880–950 MPa).
+      <span class="kr">
+        부재 속을 비우고 nTop Kelvin 셀 격자로 다시 채워, 해석이 필요하다고 말하는 곳에만 재료를 배치했습니다.
+        그 결과 약 <b>60.77% 경량화</b>(해석 구조 기준 57.9→23.7kg)하면서도 최대 응력 3.42 MPa는 Ti-6Al-4V
+        항복강도(880–950 MPa) 대비 충분한 안전여유를 확보했습니다.
+      </span>
+    </p>
+    <div class="media-grid two reveal">
+      <figure class="media contain figrow"><img src="assets/img/miracle/lattice-01.jpg" alt="Internal Kelvin-cell lattice inside a frame member"><figcaption>nTop Kelvin-cell lattice fill · 격자 채움</figcaption></figure>
+      <figure class="media contain figrow"><img src="assets/img/miracle/lattice-02.jpg" alt="nTop lattice fill inside a frame member, section view"><figcaption>Frame-member section · 부재 내부 단면</figcaption></figure>
     </div>
-    <figure class="media full reveal"><img src="assets/img/miracle/lattice-02.jpg" alt="nTop lattice fill inside a frame member, section view"><figcaption>nTop lattice fill inside a frame member · 부재 내부 격자 채움 단면</figcaption></figure>
 
     <p class="sublabel reveal" style="margin-top:3.5rem">Built &amp; Tested — Real Prototypes</p>
     <p class="proj-lead reveal" style="font-size:1.08rem">
@@ -500,65 +553,11 @@
   </div>
 </section>
 
-<!-- ===== PROJECT 04 — SPLASH ===== -->
-<section class="project" id="p04">
+<!-- ===== PROJECT 04 — CAMPER (dark) ===== -->
+<section class="project dark" id="p04">
   <div class="wrap">
     <div class="proj-head reveal">
-      <div class="ttlblock"><span class="pn">04</span><h3>SPLASH</h3></div>
-      <p class="desc">Fish-tank environment control · IoT product + app
-        <span class="kr">관상어 환경 자동제어 · Personal · 2021</span></p>
-    </div>
-
-    <p class="proj-lead reveal">
-      One device that replaces five separate aquarium gadgets — monitoring pH, TDS and temperature
-      in real time and controlling pump, heater and LED from a single app.
-      <span class="kr">
-        pH·TDS·수온을 실시간 모니터링하고 펌프·히터·LED를 앱에서 제어하는 관상어 환경 자동제어 제품입니다.
-        5개 이상으로 분리돼 있던 기기를 하나의 제품으로 통합하고, 누수 사고 방지를 위한 전장부 수평 배치 등
-        구조 설계까지 수행했습니다.
-      </span>
-    </p>
-
-    <figure class="media full plain reveal">
-      <img src="assets/img/splash/app-scene.png" alt="SPLASH app showing pH, temperature and TDS in real time">
-    </figure>
-
-    <p class="sublabel reveal">Detail Design</p>
-    <div class="feature reveal">
-      <figure class="media plain"><img src="assets/img/splash/device-detail.png" alt="SPLASH device internal structure with detachable filter"></figure>
-      <div>
-        <h4>Five gadgets, one product</h4>
-        <p>
-          A bulkhead structure maximizes water flow through a detachable, washable physical filter,
-          while electronics sit in a horizontal layout to prevent leak accidents. One device
-          replaces five or more separate aquarium gadgets.
-          <span class="kr">
-            내부 격벽 구조로 물리 여과 효율을 높이고, 여과재 용기는 탈착·세척이 가능하도록 했습니다. 전장부는
-            누수 사고를 막도록 수평 배치했고, 5개 이상으로 분리돼 있던 기기를 하나로 통합했습니다.
-          </span>
-        </p>
-      </div>
-    </div>
-
-    <div class="media-grid two reveal">
-      <figure class="media plain"><img src="assets/img/splash/product-01.png" alt="SPLASH installed on a fish tank — view 1"></figure>
-      <figure class="media plain"><img src="assets/img/splash/product-02.png" alt="SPLASH installed on a fish tank — view 2"></figure>
-    </div>
-
-    <div class="specs reveal">
-      <div><dt>Sensing</dt><dd>pH · TDS · Temperature</dd></div>
-      <div><dt>Control</dt><dd>Pump · Heater · LED</dd></div>
-      <div><dt>Stack</dt><dd>Android (Kotlin) · Arduino · Firebase</dd></div>
-      <div><dt>Design</dt><dd>Detachable filter · leak-safe layout</dd></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PROJECT 05 — CAMPER (dark) ===== -->
-<section class="project dark" id="p05">
-  <div class="wrap">
-    <div class="proj-head reveal">
-      <div class="ttlblock"><span class="pn">05</span><h3>Camper Production</h3></div>
+      <div class="ttlblock"><span class="pn">04</span><h3>Camper Production</h3></div>
       <p class="desc">Industry–academia · real full-scale fabrication
         <span class="kr">캠퍼 제작 (NRF 산학) · 2020</span></p>
     </div>
@@ -624,6 +623,60 @@
   </div>
 </section>
 
+<!-- ===== PROJECT 05 — SPLASH ===== -->
+<section class="project" id="p05">
+  <div class="wrap">
+    <div class="proj-head reveal">
+      <div class="ttlblock"><span class="pn">05</span><h3>SPLASH</h3></div>
+      <p class="desc">Fish-tank environment control · IoT product + app
+        <span class="kr">관상어 환경 자동제어 · Personal · 2021</span></p>
+    </div>
+
+    <p class="proj-lead reveal">
+      One device that replaces five separate aquarium gadgets — monitoring pH, TDS and temperature
+      in real time and controlling pump, heater and LED from a single app.
+      <span class="kr">
+        pH·TDS·수온을 실시간 모니터링하고 펌프·히터·LED를 앱에서 제어하는 관상어 환경 자동제어 제품입니다.
+        5개 이상으로 분리돼 있던 기기를 하나의 제품으로 통합하고, 누수 사고 방지를 위한 전장부 수평 배치 등
+        구조 설계까지 수행했습니다.
+      </span>
+    </p>
+
+    <figure class="media full plain reveal">
+      <img src="assets/img/splash/app-scene.png" alt="SPLASH app showing pH, temperature and TDS in real time">
+    </figure>
+
+    <p class="sublabel reveal">Detail Design</p>
+    <div class="feature reveal">
+      <figure class="media plain"><img src="assets/img/splash/device-detail.png" alt="SPLASH device internal structure with detachable filter"></figure>
+      <div>
+        <h4>Five gadgets, one product</h4>
+        <p>
+          A bulkhead structure maximizes water flow through a detachable, washable physical filter,
+          while electronics sit in a horizontal layout to prevent leak accidents. One device
+          replaces five or more separate aquarium gadgets.
+          <span class="kr">
+            내부 격벽 구조로 물리 여과 효율을 높이고, 여과재 용기는 탈착·세척이 가능하도록 했습니다. 전장부는
+            누수 사고를 막도록 수평 배치했고, 5개 이상으로 분리돼 있던 기기를 하나로 통합했습니다.
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="media-grid two reveal">
+      <figure class="media plain"><img src="assets/img/splash/product-01.png" alt="SPLASH installed on a fish tank — view 1"></figure>
+      <figure class="media plain"><img src="assets/img/splash/product-02.png" alt="SPLASH installed on a fish tank — view 2"></figure>
+    </div>
+
+    <div class="specs reveal">
+      <div><dt>Sensing</dt><dd>pH · TDS · Temperature</dd></div>
+      <div><dt>Control</dt><dd>Pump · Heater · LED</dd></div>
+      <div><dt>Stack</dt><dd>Android (Kotlin) · Arduino · Firebase</dd></div>
+      <div><dt>Design</dt><dd>Detachable filter · leak-safe layout</dd></div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== APPENDIX / CV ===== -->
 <section class="appendix" id="appendix">
   <div class="wrap split">
@@ -631,35 +684,35 @@
     <div class="reveal">
       <div class="cv-grid">
         <div class="cv-block">
-          <h4>Education</h4>
-          <div class="cv-item"><span class="yr">2022–2026</span><span class="d">Ph.D., Industrial Design — Yonsei University<small>Eco-Culture Design Lab · dissertation on sleep monitoring &amp; temperature control</small></span></div>
-          <div class="cv-item"><span class="yr">2017–2022</span><span class="d">B.S., Industrial Design — Yonsei University<small>Double major: Computer Engineering</small></span></div>
+          <h4>Education · 학력</h4>
+          <div class="cv-item"><span class="yr">2022–2026</span><span class="d">연세대학교 산업디자인 박사<small>에코문화디자인연구소 · 수면 모니터링·온도제어 학위논문 (2026 졸업예정)</small></span></div>
+          <div class="cv-item"><span class="yr">2017–2022</span><span class="d">연세대학교 산업디자인 학사<small>컴퓨터공학 이중전공</small></span></div>
 
-          <h4>Teaching &amp; Mentoring</h4>
-          <div class="cv-item"><span class="yr">2024</span><span class="d">Additive-Manufacturing Convergence Design Workshop<small>운영 지원 — 공학·디자인 융합 설계 지도</small></span></div>
-          <div class="cv-item"><span class="yr">2022</span><span class="d">Daily Instructor, Gyeonggi Dream School<small>경기도교육청 꿈의학교 일일 강사</small></span></div>
+          <h4>Teaching · 교육</h4>
+          <div class="cv-item"><span class="yr">2024</span><span class="d">적층제조 융합설계 워크숍<small>운영 지원 · 공학–디자인 융합 설계 지도</small></span></div>
+          <div class="cv-item"><span class="yr">2022</span><span class="d">경기도교육청 꿈의학교 일일 강사<small>디자인 수업 진행</small></span></div>
 
-          <h4>Industry &amp; Practice</h4>
-          <div class="cv-item"><span class="yr">2025–26</span><span class="d">Researcher, Eco-Culture Design Lab<small>Miracle 자율보행로봇 산업디자인 개발</small></span></div>
-          <div class="cv-item"><span class="yr">2022</span><span class="d">Public Designer, Yeongwol Urban Regeneration Center<small>홍보·성과공유 인쇄물/발표자료 디자인 총괄</small></span></div>
-          <div class="cv-item"><span class="yr">2021</span><span class="d">Industry–Academia (Kilsa Global)<small>ePharmacist 원격 약처방 UX/UI</small></span></div>
+          <h4>Industry · 실무</h4>
+          <div class="cv-item"><span class="yr">2025–26</span><span class="d">에코문화디자인연구소 연구원<small>Miracle 보행보조기 산업디자인 개발</small></span></div>
+          <div class="cv-item"><span class="yr">2022</span><span class="d">영월군 도시재생센터 공공디자이너<small>홍보·성과공유 인쇄물·발표자료 디자인 총괄</small></span></div>
+          <div class="cv-item"><span class="yr">2021</span><span class="d">산학협력 · 길사글로벌<small>ePharmacist 원격 약처방 UX/UI</small></span></div>
         </div>
 
         <div class="cv-block">
-          <h4>Publications &amp; IP</h4>
-          <div class="cv-item"><span class="yr">2025</span><span class="d">Tactile-Sensor-Equipped Helper Robot for Apple Orchards<small>Corresponding Author · Journal of Industrial Design Studies</small></span></div>
-          <div class="cv-item"><span class="yr">2023–25</span><span class="d">Miracle walking-robot research<small>주저자 1편 · 공저자 1편 · 학회 구두발표 2회</small></span></div>
-          <div class="cv-item"><span class="yr">2020</span><span class="d">Camper project — journal article + Utility Model<small>학회지 게재 · 실용신안 등록</small></span></div>
+          <h4>Publications &amp; IP · 논문·지식재산</h4>
+          <div class="cv-item"><span class="yr">2025</span><span class="d">촉각센서 탑재 사과 과수원 도움 로봇<small>교신저자 · 산업디자인 학술지 게재</small></span></div>
+          <div class="cv-item"><span class="yr">2023–25</span><span class="d">Miracle 보행보조기 연구<small>주저자 1편 · 공저자 1편 · 학회 구두발표 2회</small></span></div>
+          <div class="cv-item"><span class="yr">2020</span><span class="d">캠퍼 제작 프로젝트<small>학회지 게재 · 실용신안 등록</small></span></div>
 
-          <h4>Awards</h4>
-          <div class="cv-item"><span class="yr">2019</span><span class="d">2nd Prize — Yonsei School-Space Utilization Design Contest</span></div>
+          <h4>Awards · 수상</h4>
+          <div class="cv-item"><span class="yr">2019</span><span class="d">연세대 교내공간 활용 디자인 공모전 2위</span></div>
 
-          <h4>Global Programs</h4>
-          <div class="cv-item"><span class="yr">2025</span><span class="d">Campus Asia × Alibaba AI Workshop (Zhejiang Univ.)</span></div>
-          <div class="cv-item"><span class="yr">2023</span><span class="d">Campus Asia SDI-A Design Workshop (Chiba, Japan)</span></div>
-          <div class="cv-item"><span class="yr">2022</span><span class="d">Winter Program, SUNY Albany (USA)</span></div>
+          <h4>Global · 해외 프로그램</h4>
+          <div class="cv-item"><span class="yr">2025</span><span class="d">캠퍼스 아시아 × 알리바바 AI 워크숍<small>저장대학교, 중국</small></span></div>
+          <div class="cv-item"><span class="yr">2023</span><span class="d">캠퍼스 아시아 SDI-A 디자인 워크숍<small>일본 치바</small></span></div>
+          <div class="cv-item"><span class="yr">2022</span><span class="d">뉴욕주립대 올버니 동계 프로그램<small>미국</small></span></div>
 
-          <h4>Language</h4>
+          <h4>Language · 어학</h4>
           <div class="cv-item"><span class="yr">2024</span><span class="d">TOEIC 910</span></div>
         </div>
       </div>
