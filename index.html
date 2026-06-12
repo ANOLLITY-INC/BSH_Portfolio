@@ -148,7 +148,7 @@
     </p>
 
     <figure class="media full reveal">
-      <img src="assets/img/intelliwarm/hero-bedside.png" alt="INTELLIWARM on a bedside table at night">
+      <img src="assets/img/intelliwarm/callout.png" alt="INTELLIWARM Sleep System — enhanced sleep monitoring &amp; intelligent climate control">
     </figure>
 
     <div class="stat-row reveal">
@@ -159,7 +159,7 @@
 
     <p class="sublabel reveal">Key Features</p>
     <div class="feature reveal">
-      <figure class="media"><img src="assets/img/intelliwarm/callout.png" alt="INTELLIWARM features callout"></figure>
+      <figure class="media"><img src="assets/img/intelliwarm/hero-bedside.png" alt="INTELLIWARM on a bedside table at night"></figure>
       <div>
         <h4>Enhanced sleep monitoring &amp; intelligent climate control</h4>
         <p>
@@ -189,11 +189,6 @@
       </div>
     </div>
 
-    <div class="media-grid two reveal">
-      <figure class="media"><img src="assets/img/intelliwarm/scene-01.png" alt="INTELLIWARM dark scene"></figure>
-      <figure class="media"><img src="assets/img/intelliwarm/scene-light.png" alt="INTELLIWARM bright scene"></figure>
-    </div>
-
     <p class="sublabel reveal" style="margin-top:3rem">Designed from data</p>
     <div class="feature reveal">
       <figure class="media"><img src="assets/img/intelliwarm/product-studio.png" alt="INTELLIWARM studio product shot"></figure>
@@ -216,18 +211,44 @@
       </div>
     </div>
 
-    <p class="sublabel reveal" style="margin-top:3rem">Companion App</p>
-    <figure class="media full plain reveal">
-      <img src="assets/img/intelliwarm/app-render.jpg" alt="INTELLIWARM companion app — survey, sleep report, statistics and temperature-control screens">
-    </figure>
-    <p class="proj-lead reveal" style="font-size:1.05rem;margin-top:1.4rem">
-      The app guides a short sleep survey, visualizes each night's sleep score and stage
-      breakdown, and lets users set a preferred heating-pad level the system then automates.
-      <span class="kr">
-        앱은 짧은 수면 설문을 안내하고, 매일 밤의 수면 점수와 단계별 분석을 시각화하며, 사용자가 선호하는
-        전기장판 단계를 설정하면 시스템이 이를 학습해 자동 제어합니다. (Flutter 기반)
-      </span>
-    </p>
+    <div class="appshow reveal">
+      <p class="sublabel" style="margin-top:3.5rem;color:var(--accent-soft)">Companion App — INTELLIWARM</p>
+      <h4 class="app-head">An app that turns each night's sleep into tomorrow's warmth</h4>
+      <p class="app-intro">
+        Built in Flutter, the companion app guides a short sleep survey, scores every night,
+        visualizes sleep-stage trends, and personalizes the heating-pad level the device then
+        automates — closing the loop between measurement and comfort.
+        <span class="kr">
+          Flutter로 개발한 앱은 짧은 수면 설문을 안내하고, 매일 밤을 점수화하며, 수면 단계 추이를
+          시각화하고, 디바이스가 자동 제어할 전기장판 단계를 개인화합니다. 측정과 온열 제어의 순환을 잇습니다.
+        </span>
+      </p>
+    </div>
+
+    <div class="app-flow reveal">
+      <div class="app-cap"><span class="n">01</span><div><b>Overview</b><span class="kr">스플래시 · 야간 리포트 · 통계 한눈에</span></div></div>
+      <figure class="media plain"><img src="assets/img/intelliwarm/app/overview.png" alt="App overview — splash, nightly report and statistics"></figure>
+    </div>
+
+    <div class="app-flow reveal">
+      <div class="app-cap"><span class="n">02</span><div><b>Personalized setup &amp; heating</b><span class="kr">웨어러블 연동 · 선호 전기장판 단계 · 자동 수면 감지</span></div></div>
+      <figure class="media plain"><img src="assets/img/intelliwarm/app/control.png" alt="Setup — wearable pairing, preferred heating-pad level, automatic sleep detection"></figure>
+    </div>
+
+    <div class="app-flow reveal">
+      <div class="app-cap"><span class="n">03</span><div><b>Sleep survey</b><span class="kr">수면 후 설문 — 입면 시간 · 각성 횟수 등</span></div></div>
+      <figure class="media plain"><img src="assets/img/intelliwarm/app/survey.png" alt="Post-sleep survey — time to fall asleep, awakenings"></figure>
+    </div>
+
+    <div class="app-flow reveal">
+      <div class="app-cap"><span class="n">04</span><div><b>Nightly report</b><span class="kr">수면 점수 · 단계별 분석 · 일별 리포트</span></div></div>
+      <figure class="media plain"><img src="assets/img/intelliwarm/app/report.png" alt="Nightly report — sleep score and stage breakdown"></figure>
+    </div>
+
+    <div class="app-flow reveal">
+      <div class="app-cap"><span class="n">05</span><div><b>Statistics &amp; insight</b><span class="kr">주·월간 추이 · 단계 분포 · 핵심 지표</span></div></div>
+      <figure class="media plain"><img src="assets/img/intelliwarm/app/stats.png" alt="Statistics — weekly/monthly trends and stage distribution"></figure>
+    </div>
   </div>
 </section>
 
@@ -386,11 +407,94 @@
       </div>
     </div>
 
-    <div class="specs reveal">
+    <p class="sublabel reveal" style="margin-top:3.5rem">Structural Analysis &amp; Lightweighting</p>
+    <p class="proj-lead reveal" style="font-size:1.08rem">
+      To make a foldable frame both safe and light, I ran a professional structural-analysis loop —
+      finite-element (Von Mises) simulation under load, then nTop topology optimization that fills the
+      load-bearing members with a Kelvin-cell lattice tuned to the stress field.
+      <span class="kr">
+        접이식 프레임을 안전하면서도 가볍게 만들기 위해 전문적인 구조 해석을 수행했습니다. 하중 조건에서
+        유한요소(Von Mises) 해석으로 변위·변형률·응력 분포를 확인하고, nTop 위상 최적화로 하중을 받는
+        부재 내부를 응력 분포에 맞춘 Kelvin 셀 격자(내부 셀 형상)로 채웠습니다.
+      </span>
+    </p>
+    <div class="media-grid three reveal">
+      <figure class="media"><img src="assets/img/miracle/fea-displacement.jpg" alt="FEA displacement distribution"><figcaption>Displacement · 변위량 분포</figcaption></figure>
+      <figure class="media"><img src="assets/img/miracle/fea-strain.jpg" alt="FEA strain distribution"><figcaption>Strain · 변형률 분포</figcaption></figure>
+      <figure class="media"><img src="assets/img/miracle/fea-stress.jpg" alt="FEA Von Mises stress distribution"><figcaption>Von Mises stress · 응력 분포 (max 3.42 MPa)</figcaption></figure>
+    </div>
+    <div class="feature rev reveal">
+      <figure class="media"><img src="assets/img/miracle/lattice-01.jpg" alt="Internal Kelvin-cell lattice inside a frame member"></figure>
+      <div>
+        <h4>Internal cell geometry — a stress-tuned lattice</h4>
+        <p>
+          The frame members are hollowed and refilled with an nTop Kelvin-cell lattice, placing
+          material only where the analysis says it is needed. The result is <b>60.77% lighter</b>
+          (57.9 → 23.7 kg of analyzed structure) while peak Von Mises stress (3.42 MPa) stays far
+          below the Ti-6Al-4V yield strength (880–950 MPa) — light, but with a wide safety margin.
+          <span class="kr">
+            부재 속을 비우고 nTop Kelvin 셀 격자로 다시 채워, 해석이 필요하다고 말하는 곳에만 재료를
+            배치했습니다. 그 결과 약 <b>60.77% 경량화</b>(해석 구조 기준 57.9→23.7kg)하면서도 최대 응력
+            3.42 MPa는 Ti-6Al-4V 항복강도(880–950 MPa) 대비 충분한 안전여유를 확보했습니다.
+          </span>
+        </p>
+      </div>
+    </div>
+    <figure class="media full reveal"><img src="assets/img/miracle/lattice-02.jpg" alt="nTop lattice fill inside a frame member, section view"><figcaption>nTop lattice fill inside a frame member · 부재 내부 격자 채움 단면</figcaption></figure>
+
+    <p class="sublabel reveal" style="margin-top:3.5rem">Built &amp; Tested — Real Prototypes</p>
+    <p class="proj-lead reveal" style="font-size:1.08rem">
+      Beyond CAD, two working prototypes were fabricated and used by real people. Material was chosen
+      for who holds it: the adult version uses a metal frame with wood where the hands actually touch;
+      the child version is built entirely in wood, so children read it as a play object — not a
+      medical device.
+      <span class="kr">
+        설계에 그치지 않고 실제 사용 가능한 보행보조기를 두 종 제작해 사용 테스트까지 진행했습니다.
+        성인용은 철물로 프레임을 짜고 손이 직접 닿는 부분은 나무로 마감했으며, 아동용은 전체를 나무로 제작해
+        아이들이 의료기기가 아닌 놀이기구처럼 느끼고 사용하도록 재질을 선정했습니다.
+      </span>
+    </p>
+
+    <div class="feature reveal">
+      <figure class="media white"><img src="assets/img/miracle/proto-adult.png" alt="Adult walking-aid prototype — metal frame with wood handles"></figure>
+      <div>
+        <h4>Adult — metal frame, wood touchpoints</h4>
+        <p>
+          A welded metal frame carries the load; the grips and contact surfaces are wood, warmer to
+          hold and kinder to the skin during long use.
+          <span class="kr">하중은 철물 프레임이 받고, 손이 닿는 그립·접촉면은 나무로 마감해 장시간 사용에도 편안하도록 했습니다.</span>
+        </p>
+      </div>
+    </div>
+    <figure class="media full reveal" style="margin-top:1.2rem">
+      <video controls preload="none" playsinline poster="assets/video/adult-use-1.jpg">
+        <source src="assets/video/adult-use-1.mp4" type="video/mp4"></video>
+    </figure>
+    <p class="vid-cap reveal">Adult prototype — real-use test · 성인용 실물 사용 테스트</p>
+
+    <div class="feature rev reveal" style="margin-top:2.4rem">
+      <figure class="media white"><img src="assets/img/miracle/proto-child.png" alt="Child walking-aid prototype — all wood"></figure>
+      <div>
+        <h4>Child — all wood, like a play object</h4>
+        <p>
+          Built entirely from wood, the child version feels like something to play with rather than a
+          clinical aid — lowering the resistance children often have to mobility devices.
+          <span class="kr">전체를 나무로 제작해 임상 기기가 아닌 ‘놀이기구’처럼 느껴지도록 했고, 아이들이 보조기기에 갖는 거부감을 낮췄습니다.</span>
+        </p>
+      </div>
+    </div>
+    <figure class="media full reveal" style="margin-top:1.2rem">
+      <video controls preload="none" playsinline poster="assets/video/child-use.jpg">
+        <source src="assets/video/child-use.mp4" type="video/mp4"></video>
+    </figure>
+    <p class="vid-cap reveal">Child prototype — real-use test · 아동용 실물 사용 테스트</p>
+
+    <div class="specs reveal" style="margin-top:3rem">
       <div><dt>Users</dt><dd>Gait disability · GMFCS 2–3</dd></div>
       <div><dt>Target</dt><dd>100m @ 4.3–5.0 km/h, indoors</dd></div>
       <div><dt>Material</dt><dd>Ti-6Al-4V · foldable</dd></div>
       <div><dt>Weight</dt><dd>&lt; 23 kg <small>nTop −60.77%</small></dd></div>
+      <div><dt>Analysis</dt><dd>FEA Von Mises · nTop lattice</dd></div>
       <div><dt>Role</dt><dd>Industrial-design lead</dd></div>
     </div>
   </div>
@@ -478,21 +582,23 @@
     <p class="sublabel reveal">Process</p>
     <div class="feature reveal">
       <div>
-        <h4>From 1:1 tape drawing to a real vehicle</h4>
+        <h4>Detailed design with master woodworkers</h4>
         <p>
-          As the largest object made in our program, the camper demanded a different design process —
-          verifying form at full scale with 1:1 tape drawing alongside Rhino modeling, building
-          skeleton and panels in wood, and detailing the production sequence with experts for
-          road-safety and trailer loading.
+          As the largest object made in our program, the camper demanded a different process —
+          verifying form at full scale with 1:1 tape drawing alongside Rhino modeling. For the build
+          we consulted master woodworkers <b>Park Jong-seon</b> and <b>Lim Byeong-gap</b>, each with
+          over a decade of experience, to detail the joinery, wooden skeleton and panels, and a safe
+          production sequence.
           <span class="kr">
-            학과에서 제작한 가장 큰 제품으로, 라이노 모델링과 함께 1:1 테이프 드로잉으로 실제 크기의 형상을
-            검증하는 다른 설계 프로세스를 경험했습니다. 골조·내외장 패널을 목재로 제작하고, 주행 안전성과
-            트레일러 적재를 고려해 전문가들과 제작 순서를 상세화했습니다.
+            학과에서 제작한 가장 큰 제품으로, 라이노 모델링과 1:1 테이프 드로잉으로 실제 크기 형상을 검증하는
+            다른 설계 프로세스를 경험했습니다. 제작 단계에서는 10년 이상 경력의 목공 전문가
+            <b>박종선 목수님</b>·<b>임병갑 목수님</b>께 자문을 구해 결구·목재 골조·패널과 안전한 제작 순서를
+            상세 설계했습니다.
           </span>
         </p>
         <div class="tags">
           <span><b>Build</b> Full-scale wooden fabrication</span>
-          <span><b>Process</b> Rhino + 1:1 tape drawing</span>
+          <span><b>Advisors</b> 10+yr master woodworkers</span>
           <span><b>Outcome</b> 학회지 게재 · 실용신안 등록</span>
         </div>
       </div>
@@ -504,6 +610,17 @@
       <figure class="media"><img src="assets/img/camper/process-02.jpg" alt="Camper skeleton during fabrication"></figure>
       <figure class="media"><img src="assets/img/camper/process-03.jpg" alt="Camper interior during fabrication"></figure>
     </div>
+
+    <p class="sublabel reveal" style="margin-top:3rem">Validated on the road</p>
+    <p class="proj-lead reveal" style="font-size:1.08rem;margin-bottom:0">
+      The finished camper was loaded on a boat trailer and driven at <em>over 80 km/h</em> — and held
+      up with no structural problems. Built in 2021, it has stayed in normal use ever since: a design
+      proven not just on paper, but on the road.
+      <span class="kr">
+        완성한 캠퍼는 보트트레일러에 실어 <em>80km/h 이상</em>으로 주행했고, 구조적 문제 없이 견뎠습니다.
+        2021년 제작 이후 지금까지 정상적으로 사용 중으로, 도면이 아니라 실제 주행으로 검증된 설계입니다.
+      </span>
+    </p>
   </div>
 </section>
 
