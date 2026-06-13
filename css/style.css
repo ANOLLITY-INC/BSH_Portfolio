@@ -120,7 +120,7 @@ section{padding-block:clamp(72px,11vw,168px)}
 .about .statement{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:400;
   line-height:1.32;letter-spacing:-.018em;color:#fff;max-width:24ch}
 .about .statement em{font-style:normal;font-weight:700}
-.about .lead{margin-top:1.4rem;color:#b7b5ae;max-width:62ch;font-size:.98rem}
+.about .lead{margin-top:1.4rem;color:#b7b5ae;font-size:.98rem;text-wrap:pretty}
 .about-meta{margin-top:3.4rem;display:grid;grid-template-columns:repeat(2,1fr);
   gap:2.4rem 2rem;max-width:62ch}
 @media(max-width:560px){.about-meta{grid-template-columns:1fr}}
@@ -160,10 +160,10 @@ section{padding-block:clamp(72px,11vw,168px)}
 .project.dark .proj-head .desc{color:#b7b5ae}
 .proj-head .desc .kr{display:block;color:var(--gray)}
 
-.proj-lead{font-size:clamp(1.1rem,2vw,1.5rem);font-weight:400;max-width:46em;
+.proj-lead{font-size:clamp(1.1rem,2vw,1.5rem);font-weight:400;
   line-height:1.45;letter-spacing:-.015em;margin-bottom:3rem;text-wrap:pretty}
 .proj-lead em{font-style:normal;font-weight:700}
-.proj-lead .kr{display:block;font-size:.96rem;line-height:1.7;margin-top:.8rem;max-width:64ch}
+.proj-lead .kr{display:block;font-size:.96rem;line-height:1.7;margin-top:.8rem}
 
 .sublabel{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
   color:var(--gray);margin:0 0 1.4rem;font-weight:500}
