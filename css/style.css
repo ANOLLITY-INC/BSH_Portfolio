@@ -120,7 +120,7 @@ section{padding-block:clamp(72px,11vw,168px)}
 .about .statement{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:400;
   line-height:1.32;letter-spacing:-.018em;color:#fff;max-width:24ch}
 .about .statement em{font-style:normal;font-weight:700}
-.about .lead{margin-top:1.4rem;color:#b7b5ae;font-size:.98rem;text-wrap:pretty}
+.about .lead{margin-top:1.4rem;color:#b7b5ae;font-size:.98rem;max-width:85%;text-wrap:pretty}
 .about-meta{margin-top:3.4rem;display:grid;grid-template-columns:repeat(2,1fr);
   gap:2.4rem 2rem;max-width:62ch}
 @media(max-width:560px){.about-meta{grid-template-columns:1fr}}
@@ -160,7 +160,7 @@ section{padding-block:clamp(72px,11vw,168px)}
 .project.dark .proj-head .desc{color:#b7b5ae}
 .proj-head .desc .kr{display:block;color:var(--gray)}
 
-.proj-lead{font-size:clamp(1.1rem,2vw,1.5rem);font-weight:400;
+.proj-lead{font-size:clamp(1.1rem,2vw,1.5rem);font-weight:400;max-width:85%;
   line-height:1.45;letter-spacing:-.015em;margin-bottom:3rem;text-wrap:pretty}
 .proj-lead em{font-style:normal;font-weight:700}
 .proj-lead .kr{display:block;font-size:.96rem;line-height:1.7;margin-top:.8rem}
@@ -258,10 +258,11 @@ section{padding-block:clamp(72px,11vw,168px)}
 .flowchart .fc-loop{stroke:#6a6c73;stroke-width:1.4;stroke-dasharray:5 5;fill:none}
 
 /* feature two-col */
-.feature{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4.5vw,64px);
+.feature{display:flex;flex-wrap:wrap;gap:clamp(24px,4.5vw,64px);
   align-items:center;margin:3rem 0}
-.feature.rev>.media{order:2}
-@media(max-width:820px){.feature{grid-template-columns:1fr;gap:1.6rem}.feature.rev>.media{order:0}}
+.feature>*{flex:1 1 320px;min-width:0}
+.feature.rev{flex-direction:row-reverse}
+@media(max-width:820px){.feature,.feature.rev{flex-direction:column;gap:1.6rem}}
 .feature h4{font-size:clamp(1.25rem,2.2vw,1.7rem);font-weight:700;letter-spacing:-.02em;margin-bottom:.9rem;line-height:1.12;text-wrap:balance}
 .feature p{color:var(--ink-soft);font-size:1rem;text-wrap:pretty}  /* fill the column */
 .project.dark .feature p{color:#b7b5ae}
@@ -320,21 +321,31 @@ section{padding-block:clamp(72px,11vw,168px)}
 
 /* ---------- print / PDF ---------- */
 @media print{
-  /* 16:9 page so exports/screenshots aren't cut mid-content */
-  @page{size:1280px 720px;margin:0}
+  /* 16:9 page at full-screen width (.wrap=1320 centers, exactly like the desktop layout).
+     PDF submission: every block fits one 1080px page and never splits across pages. */
+  @page{size:1920px 1080px;margin:0}
   *{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}
   html.reveal-on .reveal{opacity:1 !important;transform:none !important}
+  html{scroll-behavior:auto}
   .nav{display:none}
-  .cover{min-height:700px;height:700px;break-after:page;justify-content:center}
-  .cover-foot{bottom:40px}
-  section{padding-block:64px}
-  /* keep any single block whole within a 16:9 page */
-  .feature,.media-grid,.work-row,.cv-item,.stat-row,.media,figure,
-  .app-sec,.app-sec-head,.phone-row,.phone-step,.dsys,.proj-head,.specs,.flowchart{break-inside:avoid}
-  .proj-head,.about .label,.works .label{break-after:avoid}
-  /* cap media so a figure fits one 16:9 page */
-  .media img,.media video{max-height:560px}
-  .phone-step img{max-height:520px;width:auto;margin:0 auto}
+  .cover{min-height:1080px;height:1080px;break-after:page;justify-content:center}
+  .cover-foot{bottom:48px}
+  section{padding-block:72px}
+  /* each major section starts on a fresh page */
+  .project,.appendix,.about,.works{break-before:page}
+  /* never split a single block across a page boundary */
+  .proj-head,.proj-lead,.feature,.media-grid,.media,figure,.work-row,.cv-item,.stat-row,
+  .specs,.app-sec,.phone-row,.dsys,.flowchart,.tags,.about-meta,.statement,.cv-block,
+  .vid-cap,.about-grid,.list{break-inside:avoid}
+  .proj-head,.sublabel,.app-sec-head{break-after:avoid}
+  /* keep media within a 1080px page */
+  .media img,.media video{max-height:820px}
+  .phone-step img{max-height:740px;width:auto;margin:0 auto}
+  /* force features to stay 2-column in print (Chrome flattens flex/grid otherwise) */
+  .feature{flex-direction:row !important;flex-wrap:nowrap !important;align-items:center}
+  .feature.rev{flex-direction:row-reverse !important}
+  .feature>*{flex:0 0 47% !important;max-width:47% !important}
+  .feature .media img{max-height:640px}
   a{color:inherit}
 }
 
